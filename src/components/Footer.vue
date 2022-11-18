@@ -27,7 +27,6 @@ footer {
   padding: 2rem;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 ul {
@@ -37,11 +36,27 @@ ul {
   padding: 0;
 
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
 small {
-  grid-column-start: 3;
-  justify-self: end;
+  padding-block: 1rem;
+  grid-column-start: 0;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  ul {
+    justify-content: start;
+  }
+
+  small {
+    grid-column-start: 3;
+  }
 }
 </style>
