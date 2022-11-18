@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/fonts/FiraSans-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 900;
+  src: url("/fonts/FiraSans-Black.woff2");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 700;
+  src: url("/fonts/FiraSans-Bold.woff2");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  src: url("/fonts/FiraSans-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 300;
+  src: url("/fonts/FiraSAns-Light.woff2");
+}
+
+:root {
+  --clr-white: hsl(227, 100%, 98%);
+  --clr-blue: hsl(215, 49%, 44%);
+  --clr-blue-light: hsl(215, 49%, 44%, 15%);
+  --clr-yellow: hsl(53, 94%, 46%);
+  --clr-yellow-light: hsl(53, 94%, 46%, 15%);
+  --clr-text-light: hsl(215, 49%, 44%, 55%);
+
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.75rem;
+  --spacing-small: 1rem;
+  --spacing-normal: 2rem;
+  --spacing-medium: 3rem;
+  --spacing-big: 4rem;
+}
+
+#app {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  font-family: "Fira Sans";
+}
+
+body {
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-blue);
+  font-weight: 900;
+  text-transform: uppercase;
+
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a[class] {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0.25rem solid currentColor;
+  outline-offset: 0.25rem;
+}
+
+.do {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+
+  .mo {
+    display: none !important;
+  }
+
+  .do {
+    display: initial;
+  }
+}
