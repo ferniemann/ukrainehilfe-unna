@@ -28,5 +28,18 @@ export default function () {
     return data.data;
   }
 
-  return { getDonations, getFeaturedEvent, getPostByTag, getPostById };
+  async function getAllPosts() {
+    const res = await fetch(baseUrl + "articles");
+    const data = await res.json();
+
+    return data.data;
+  }
+
+  return {
+    getDonations,
+    getFeaturedEvent,
+    getPostByTag,
+    getPostById,
+    getAllPosts,
+  };
 }

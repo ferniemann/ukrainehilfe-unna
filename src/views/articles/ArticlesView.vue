@@ -1,13 +1,21 @@
 <template>
   <div>
     <FeaturedEvent text />
-    <ArticleCard id="1" />
+    <ArticleCard
+      v-for="article of articles"
+      :key="article.id"
+      :id="article.id"
+    />
   </div>
 </template>
 
 <script lang="ts" setup>
 import FeaturedEvent from "../../components/FeaturedEvent.vue";
 import ArticleCard from "../../components/ArticleCard.vue";
+import getData from "../../composables/getData";
+
+const { getAllPosts } = getData();
+const articles = await getAllPosts();
 </script>
 
 <style scoped>

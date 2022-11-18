@@ -4,6 +4,11 @@
       <header>
         <h2>{{ article.title }}</h2>
       </header>
+      <img
+        :src="`https://api.ukrainehilfe-unna.de/assets/${article.featured_image}`"
+        alt="Artikelbild"
+        style="width: 100%"
+      />
       <section class="article-event" v-if="article.start_date">
         <div class="date">
           <p>Wann:</p>
@@ -79,5 +84,9 @@ h2 {
 .article-content :deep() h3 {
   text-transform: unset;
   font-weight: 700;
+}
+
+.article-content :deep() p {
+  line-height: 1.6;
 }
 </style>
