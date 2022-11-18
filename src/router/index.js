@@ -6,6 +6,7 @@ import ArticlesView from "../views/articles/ArticlesView.vue";
 import ImpressumView from "../views/ImpressumView.vue";
 import DatenschutzView from "../views/DatenschutzView.vue";
 import DonateView from "../views/DonateView.vue";
+import ErreichtesView from "../views/ErreichtesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,10 @@ const router = createRouter({
       path: "/spenden",
       name: "donations",
       component: DonateView,
+    },
+    {
+      path: "/erreichtes",
+      component: ErreichtesView,
     },
   ],
 });

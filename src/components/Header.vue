@@ -19,7 +19,9 @@ import Donations from "./Donations.vue";
           >
         </li>
         <li>
-          <RouterLink to="#" class="main-nav-link">Erreichtes</RouterLink>
+          <RouterLink to="/erreichtes" class="main-nav-link"
+            >Erreichtes</RouterLink
+          >
         </li>
         <li>
           <RouterLink to="/wir" class="main-nav-link">Wir</RouterLink>
