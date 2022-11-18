@@ -31,7 +31,7 @@ import Donations from "./Donations.vue";
     <RouterLink to="/spenden" class="do main-nav-link featured-nav-link">
       Spenden
     </RouterLink>
-    <RouterLink to="#" class="mo main-nav-link featured-nav-link">
+    <RouterLink to="/spenden" class="mo main-nav-link featured-nav-link">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="2.5rem"
